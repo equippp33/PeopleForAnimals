@@ -45,7 +45,7 @@
       },
       "env": {
         "NODE_ENV": "production",
-        "API_URL": "https://abc-arv.in"
+        "API_URL": "https://people-for-animals-nextjs.vercel.app"
       }
     }
   },

@@ -92,7 +92,7 @@ function collectFiles(dir) {
 }
 
 // ── Legacy names to also replace ──
-const legacyNames = ["Blue Cross", "bluecross", "Blue Cross of Hyderabad"];
+const legacyNames = ["People For Animals", "People For Animals", "People For Animals of Hyderabad"];
 
 // ── Replacements (most specific first) ──
 const replacements = [

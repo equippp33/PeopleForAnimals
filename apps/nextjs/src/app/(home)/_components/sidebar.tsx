@@ -27,10 +27,11 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="mb-3 flex items-center justify-center">
         <img
-          src="/assets/images/peopleforanimals.png"
-          alt="Blue Cross of Hyderabad"
+          src="/assets/images/app_icon.png"
+          alt="People For Animals"
           width={150}
           height={150}
+          className="rounded-2xl"
         />
       </div>
 

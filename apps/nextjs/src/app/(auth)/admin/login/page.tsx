@@ -98,16 +98,6 @@ const AdminLogin = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Background Image Container */}
-      <div className="fixed inset-0">
-        <div className="absolute inset-0">
-          <img
-            src="/assets/images/bg.png"
-            alt="Login background"
-            className="h-full w-full object-cover"
-          />
-        </div>
-      </div>
 
       {/* Login Form Container */}
       <div className="relative z-10 flex min-h-screen items-center justify-center lg:justify-start px-4 sm:px-6 lg:px-20">

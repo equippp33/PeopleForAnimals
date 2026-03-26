@@ -11,13 +11,13 @@ export const metadata: Metadata = {
       ? "https://turbo.t3.gg"
       : "http://localhost:3000",
   ),
-  title: "Blue Cross of Hyderabad",
+  title: "People For Animals of Hyderabad",
   description: "Hospital Management System",
   openGraph: {
-    title: "Blue Cross of Hyderabad",
+    title: "People For Animals of Hyderabad",
     description: "Hospital Management System",
     url: "https://peopleforanimals.vercel.app",
-    siteName: "Blue Cross of Hyderabad",
+    siteName: "People For Animals of Hyderabad",
   },
 };
 

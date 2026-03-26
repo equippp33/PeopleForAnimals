@@ -8,7 +8,7 @@ import Constants from "expo-constants";
 export const getBaseUrl = () => {
   // For production builds, prefer the API_URL environment variable (set via EAS) and fall back to the default URL
   if (process.env.NODE_ENV === "production") {
-    return process.env.API_URL ?? "https://abc-arv.in";
+    return process.env.API_URL ?? "https://people-for-animals-nextjs.vercel.app";
   }
 
   // For development, use the local server

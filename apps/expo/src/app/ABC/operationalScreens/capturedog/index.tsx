@@ -69,8 +69,8 @@ const TaskScreen = () => {
 
     if (language === "hi") {
       return teamName
-        .replace(/Blue Cross Team (\d+)/gi, "ब्लू क्रॉस टीम $1")
-        .replace(/Blue Cross/gi, "ब्लू क्रॉस")
+        .replace(/People For Animals Team (\d+)/gi, "ब्लू क्रॉस टीम $1")
+        .replace(/People For Animals/gi, "ब्लू क्रॉस")
         .replace(/Team (\d+)/gi, "टीम $1")
         .replace(/Team/gi, "टीम")
         .replace(/Operational Team/gi, "परिचालन टीम")
@@ -88,8 +88,8 @@ const TaskScreen = () => {
         .replace(/Delta/gi, "डेल्टा");
     } else if (language === "te") {
       return teamName
-        .replace(/Blue Cross Team (\d+)/gi, "బ్లూ క్రాస్ టీమ్ $1")
-        .replace(/Blue Cross/gi, "బ్లూ క్రాస్")
+        .replace(/People For Animals Team (\d+)/gi, "బ్లూ క్రాస్ టీమ్ $1")
+        .replace(/People For Animals/gi, "బ్లూ క్రాస్")
         .replace(/Team (\d+)/gi, "టీమ్ $1")
         .replace(/Team/gi, "టీమ్")
         .replace(/Operational Team/gi, "కార్యాచరణ టీమ్")

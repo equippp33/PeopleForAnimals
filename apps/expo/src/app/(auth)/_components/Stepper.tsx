@@ -102,11 +102,13 @@ export default function Stepper() {
           )}
 
           {/* Logo at top */}
-          <Image
-            source={require("../../../../assets/images/abc-mobile-2.png")}
-            style={{ width: 380, height: 200 }}
-            resizeMode="contain"
-          />
+          <View style={{ width: 200, height: 200, borderRadius: 20, overflow: "hidden" }}>
+            <Image
+              source={require("../../../../assets/images/app_icon.png")}
+              style={{ width: "100%", height: "100%" }}
+              resizeMode="cover"
+            />
+          </View>
 
           {/* Step indicators */}
           <View className="mb-6 mt-6 flex-row items-center justify-center gap-2">
@@ -119,16 +121,16 @@ export default function Stepper() {
                 <View key={step} className="flex flex-row items-center gap-2">
                   {index !== 0 && (
                     <View
-                      className={`h-0.5 w-4 rounded-full ${isCompleted ? "bg-blue-500" : "bg-white opacity-80"}`}
+                      className={`h-0.5 w-4 rounded-full ${isCompleted ? "bg-[#fcbc03]" : "bg-white opacity-80"}`}
                     />
                   )}
                   <TouchableOpacity
                     onPress={() => isClickable && goToStep(step)}
                     disabled={!isClickable}
                     className={`flex h-9 w-9 items-center justify-center rounded-full ${isActive
-                      ? "bg-blue-600"
+                      ? "bg-[#fcbc03]"
                       : isCompleted
-                        ? "bg-blue-500"
+                        ? "bg-[#fcbc03]"
                         : "bg-white opacity-80"
                       }`}
                   >
@@ -185,13 +187,13 @@ function StepOne({ onNext }: { onNext: () => void }) {
   return (
     <View className="flex items-center justify-center">
       <View className="flex items-center justify-center">
-        <Text className="text-[48px] font-semibold text-white">Blue Cross</Text>
+        <Text className="text-[32px] font-semibold text-white">People For Animals</Text>
         <Text className="mb-6 text-lg font-semibold text-white">
           Dog Rescue & Management Portal
         </Text>
       </View>
       <TouchableOpacity
-        className="w-3/5 overflow-hidden rounded-xl bg-[#FB724C]"
+        className="w-3/5 overflow-hidden rounded-xl bg-[#fcbc03]"
         onPress={onNext}
       >
         <View className="w-full py-3">
@@ -398,8 +400,8 @@ function StepTwo({
       <View className="mt-4 items-center">
         <TouchableOpacity
           className={`w-3/5 overflow-hidden rounded-xl py-3 ${selectedRoleValue && watch("phoneNumber").length === 10
-            ? "bg-[#FB724C]"
-            : "bg-[#FB724C]/50"
+            ? "bg-[#fcbc03]"
+            : "bg-[#fcbc03]/50"
             }`}
           onPress={handleSubmit(onSubmit)}
           disabled={
@@ -518,8 +520,8 @@ function StepThree({
       <View className="mt-4 items-center">
         <TouchableOpacity
           className={`w-3/5 overflow-hidden rounded-xl ${verifyOtp.isPending || otp.length !== 4
-            ? "bg-[#FB724C]/50"
-            : "bg-[#FB724C]"
+            ? "bg-[#fcbc03]/50"
+            : "bg-[#fcbc03]"
             } py-3`}
           onPress={onSubmit}
           disabled={verifyOtp.isPending || otp.length !== 4}

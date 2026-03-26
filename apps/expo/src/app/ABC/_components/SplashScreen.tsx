@@ -23,10 +23,10 @@ const SplashScreen = ({ onAnimationComplete }: SplashScreenProps) => {
 
   useEffect(() => {
     console.log("Animation starting at:", new Date().toISOString());
-    
+
     // Start fade animation
     fadeAnim.value = withTiming(1, { duration: 1800 });
-    
+
     // Start scale animation with completion callback
     scaleAnim.value = withTiming(1, { duration: 1400 }, (finished) => {
       'worklet';
@@ -48,11 +48,13 @@ const SplashScreen = ({ onAnimationComplete }: SplashScreenProps) => {
       }}
     >
       <Animated.View style={animatedStyle}>
-        <Image
-          source={require("../../../../assets/images/abc-mobile-2.png")}
-          style={{ width: 460, height: 240 }}
-          resizeMode="contain"
-        />
+        <View style={{ width: 200, height: 240, borderRadius: 20, overflow: "hidden" }}>
+          <Image
+            source={require("../../../../assets/images/app_icon.png")}
+            style={{ width: "100%", height: "100%" }}
+            resizeMode="cover"
+          />
+        </View>
       </Animated.View>
     </View>
   );

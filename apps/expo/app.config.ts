@@ -1,14 +1,14 @@
 export default ({ config }: any) => ({
   ...config,
-  name: "PeopleForAnimals",
+  name: "People For Animals",
   slug: "peopleforanimals",
   scheme: "peopleforanimals",
   version: "0.1.0",
   orientation: "portrait",
-  icon: "./assets/images/app_icon.png",
+  icon: "./assets/images/app_icon-1.png",
   userInterfaceStyle: "automatic",
   splash: {
-    image: "./assets/images/app_icon.png",
+    image: "./assets/images/app_icon-1.png",
     resizeMode: "contain",
   },
   updates: {
@@ -21,7 +21,7 @@ export default ({ config }: any) => ({
   ios: {
     bundleIdentifier: "com.peopleforanimals.app",
     supportsTablet: true,
-    icon: "./assets/images/app_icon.png",
+    icon: "./assets/images/app_icon-1.png",
     config: {
       googleMapsApiKey: process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY,
     },
@@ -33,7 +33,7 @@ export default ({ config }: any) => ({
     package: "com.peopleforanimals.app",
 
     adaptiveIcon: {
-      foregroundImage: "./assets/images/app_icon.png",
+      foregroundImage: "./assets/images/app_icon-1.png",
       backgroundColor: "#1F104A",
     },
     jsEngine: "hermes",
