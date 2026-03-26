@@ -1,8 +1,8 @@
 export default ({ config }: any) => ({
   ...config,
-  name: "BlueCross",
-  slug: "bluecross",
-  scheme: "bluecross",
+  name: "PeopleForAnimals",
+  slug: "peopleforanimals",
+  scheme: "peopleforanimals",
   version: "0.1.0",
   orientation: "portrait",
   icon: "./assets/images/app_icon.png",
@@ -19,7 +19,7 @@ export default ({ config }: any) => ({
   },
   assetBundlePatterns: ["**/*", "./assets/fonts/*"],
   ios: {
-    bundleIdentifier: "com.bluecross.app",
+    bundleIdentifier: "com.peopleforanimals.app",
     supportsTablet: true,
     icon: "./assets/images/app_icon.png",
     config: {
@@ -30,7 +30,7 @@ export default ({ config }: any) => ({
     },
   },
   android: {
-    package: "com.bluecross.app",
+    package: "com.peopleforanimals.app",
 
     adaptiveIcon: {
       foregroundImage: "./assets/images/app_icon.png",

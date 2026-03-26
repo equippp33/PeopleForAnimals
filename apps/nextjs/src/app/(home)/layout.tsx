@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blue Cross of Hyderabad",
     description: "Hospital Management System",
-    url: "https://bluecross.vercel.app",
+    url: "https://peopleforanimals.vercel.app",
     siteName: "Blue Cross of Hyderabad",
   },
 };

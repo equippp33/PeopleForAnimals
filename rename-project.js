@@ -91,6 +91,9 @@ function collectFiles(dir) {
   return results;
 }
 
+// ── Legacy names to also replace ──
+const legacyNames = ["Blue Cross", "bluecross", "Blue Cross of Hyderabad"];
+
 // ── Replacements (most specific first) ──
 const replacements = [
   [`${oldDisplay} Team`, `${newDisplay} Team`],
@@ -99,6 +102,8 @@ const replacements = [
   [`com.${oldSlug}`, `com.${newSlug}`],
   [oldDisplay, newDisplay],
   [oldSlug, newSlug],
+  // Replace legacy hardcoded names
+  ...legacyNames.map((legacy) => [legacy, newDisplay]),
 ];
 
 console.log("Replacing text in files...");
