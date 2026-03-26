@@ -1,0 +1,31 @@
+{
+  "extends": ["@acme/tsconfig/base.json"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@server/*": ["../server/*"],
+      "@acme/db/*": ["../packages/db/src/*"],
+      "@acme/db": ["../packages/db/src/index"]
+    },
+    "jsx": "preserve",
+    "checkJs": false,
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "moduleSuffixes": [".ios", ".android", ".native", ""],
+    "lib": ["DOM", "ES2022"],
+    "types": ["react"]
+  },
+  "include": [
+    "src",
+    "*.ts",
+    "*.tsx",
+    "*.js",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts",
+    "../server/**/*",
+    "../packages/db/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
