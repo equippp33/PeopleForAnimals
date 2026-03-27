@@ -12,7 +12,7 @@ export default ({ config }: any) => ({
     resizeMode: "contain",
   },
   updates: {
-    url: "https://u.expo.dev/1c3e89a3-b4f7-4a81-b8a6-05badca4569d",
+    url: "https://u.expo.dev/0da834f9-a57c-4050-a658-a945c885f12a",
   },
   runtimeVersion: {
     policy: "appVersion",
@@ -51,7 +51,7 @@ export default ({ config }: any) => ({
   },
   extra: {
     eas: {
-      projectId: "1c3e89a3-b4f7-4a81-b8a6-05badca4569d",
+      projectId: "0da834f9-a57c-4050-a658-a945c885f12a",
     },
   },
   experiments: {
