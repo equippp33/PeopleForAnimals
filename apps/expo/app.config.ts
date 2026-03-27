@@ -1,7 +1,7 @@
 export default ({ config }: any) => ({
   ...config,
   name: "People For Animals",
-  slug: "peopleforanimals",
+  slug: "people-for-animals",
   scheme: "peopleforanimals",
   version: "0.1.0",
   orientation: "portrait",
